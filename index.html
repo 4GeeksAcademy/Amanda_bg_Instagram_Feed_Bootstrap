@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <title>Instagram With Bootstrap</title>
+
+  <!-- Estilos CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!--bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+ 
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+   
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Icono e imagen -->
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="https://www.instagram.com">
+          <i class="fa-brands fa-instagram"></i>
+          <img src="https://logos-download.com/wp-content/uploads/2016/03/Instagram_Logo_2016.svg" width="100"
+            height="30" class="d-inline-block img-fluid align-top" alt="" loading="lazy">
+        </a>
+        <!-- Botón de navegación colapsable -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- <div class="navbar-nav"> <!-- contenido a la derecha -->
+
+      <!-- Button trigger modal -->
+      <!-- <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+          Create a New post
+        </button> -->
+
+      <!-- Modal -->
+      <div class="modal fade ml" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Elementos de navegación colapsables -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <!-- <span class="btn btn-success"> -->
+              <span class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                Create a New Post
+              </span>
+            </a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown mr-5">
+            <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink mr-5">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Log out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+  </div>
+  </nav>
+  <!-- nav -->
+  <ul class="nav nav-tabs justify-content-center my-4 mx-auto align-items-center-3" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab"
+        aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab"
+        aria-controls="profile" aria-selected="false"><i class="fa-regular fa-square"></i></button>
+    </li>
+  </ul> <!-- card group -->
+  <div class="tab-content justify-content-center my-4 mx-auto align-items-center-3 p-3" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" >
+      <div class="card-groupgit">
+        <div class="card">
+          <img src="https://picsum.photos/id/215/3264/2448" class="card-img-top" alt="...">
+          <div class="card-body">
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/124/3504/2336" class="card-img-top" alt="...">
+          <div class="card-body">
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/143/367/267" class="card-img-top" alt="...">
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card ">
+          <img src="https://picsum.photos/id/210/3264/2448" class="card-img-top" alt="...">
+          <div class="card-body">
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/100/3504/2336" class="card-img-top" alt="...">
+          <div class="card-body">
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/173/367/267" class="card-img-top" alt="...">
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="https://picsum.photos/id/217/3264/2448" class="card-img-top" alt="...">
+          <div class="card-body">
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/128/3504/2336" class="card-img-top" alt="...">
+          <div class="card-body">
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/160/367/267" class="card-img-top" alt="...">
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+    </div><!-- card group 2-->
+    <div class="tab-pane fade my-4 mx-auto row-justify-content-center align-items-center p-3" style="width: 30rem;" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="card"">
+          <h3>Photo</h3>
+          <img src="https://picsum.photos/id/215/3264/2448" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p><b>300 Likes</b></p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Photo</h3>
+          <img src="https://picsum.photos/id/124/3504/2336" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p><b>300 Likes</b></p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Photo</h3>
+          <img src="https://picsum.photos/id/143/367/267" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p><b>300 Likes</b></p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Photo</h3>
+          <img src="https://picsum.photos/id/210/3264/2448" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p><b>300 Likes</b></p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Photo</h3>
+          <img src="https://picsum.photos/id/100/3504/2336" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p><b>300 Likes</b></p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Photo</h3>
+          <img src="https://picsum.photos/id/173/367/267" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p><b>300 Likes</b></p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Photo</h3>
+          <img src="https://picsum.photos/id/217/3264/2448" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p><b>300 Likes</b></p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Photo</h3>
+          <img src="https://picsum.photos/id/128/3504/2336" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p><b>300 Likes</b></p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Photo</h3>
+          <img src="https://picsum.photos/id/160/367/267" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p><b>300 Likes</b></p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  
+</body>
+
+</html>
